@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script src="simple-calculator.js" defer></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        .calculator {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            padding: 25px;
+            max-width: 400px;
+            width: 100%;
+            border: 2px solid #3498db;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        p {
+            color: #2980b9;
+        }
+        input{
+            width:95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #2980b9;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        button {
+            width: 16%;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 10px;
+            background-color: #3498db;
+            color: #ffffff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #1abc9c;
+        }
+        #ans {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #2980b9;
+            border-radius: 10px;
+            font-size: 16px;
+            background-color: #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Simple Calculator</h1>
+        <div>
+            <p>Number 1:</p>
+            <input type="text" id="num1">
+            <p>Number 2:</p>
+            <input type="text" id="num2">
+        </div>
+        <button onclick="addition()" title="addition">+</button>
+        <button onclick="subtraction()" title="subtraction">-</button>
+        <button onclick="multiplication()" title="multiplication">*</button>
+        <button onclick="division()" title="division">/</button>
+        <button onclick="modulus()" title="remainder">%</button>
+        <button onclick="clearAll()" title="clear all">C</button>
+        
+        <div>
+            <p>Answer:</p>
+            <input type="text" id="ans" readonly>
+        </div>
+    </div>
+</body>
+</html>

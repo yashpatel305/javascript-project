@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee salary</title>
+    <script src="employee-salary.js" defer></script>
+    <style>
+        div {
+            width: 50%;
+            margin:20px auto;
+            padding: 20px;
+            align-items: center;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px black;
+            display: flex;
+            flex-direction: column; 
+            font-family: Arial, sans-serif;
+        }
+        div h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-bottom: 2px solid black;
+        }
+        p {
+            font-weight: bold;
+        }
+        input {
+            width: 50%;
+            padding: 5px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        button {
+            width: 50%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid black;
+            background-color: lightblue;
+            margin-top: 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+            Employee Salary Calculator
+        </h1>
+        <p>enter your name : </p><input type="text" id="name">
+        <p>enter your working month : </p><input type="text" id="month">
+        <p>enter your per month salary : </p><input type="text" id="salary">
+        <p>enter bonus amount : </p><input type="text" id="bonus">
+        <button onclick="calculateSalary()">calculate Salary</button>
+        <p>your total salary :</p> <input type="text" id="total">
+    </div>
+</body>
+</html>

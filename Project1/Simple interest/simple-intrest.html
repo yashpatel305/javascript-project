@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPLE INTREST</title>
+    <script src="simple-intrest.js" defer></script>
+    <style>
+        div{
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            border: 2px solid rgb(66, 66, 161);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1{
+            color: rgb(18, 18, 27);
+            text-transform: uppercase;
+            border-bottom: 2px solid rgb(66, 66, 161);
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button{
+            padding: 10px 20px;
+            background-color: rgb(10, 10, 12);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            font-size: 15px;
+        }
+        button:hover{
+            background-color: rgb(0, 62, 128);
+        }
+        p{
+            text-align: left;
+        }
+    </style>
+      
+</head>
+<body>
+    <div>
+        <h1>Simple Interest Calculator</h1>
+        <p>Principal Amount:</p>
+        <input type="number" id="principal" placeholder="Enter Principal Amount">
+        <p>Rate of Interest:</p>
+        <input type="number" id="rate" placeholder="Enter Rate of Interest">
+        <p>Time Period:</p>
+        <input type="number" id="time" placeholder="Enter Time Period in year">
+        <button onclick="calculate()">Calculate</button>
+        <p id="ans"></p>
+    </div>
+</body>
+</html>
