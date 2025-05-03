@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshKart</title>
+  <script src="addtocart.js" defer></script>
+  <link rel="stylesheet" href="addtocart.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">FreshKart</div>
+    <div class="cart-icon" id="cart-icon">Cart 🛒 <span id="total"></span></div>
+  </header>
+
+  <div class="main">
+    <div class="product-card">
+      <img src="https://media.istockphoto.com/id/183422512/photo/fresh-red-apples-on-white-background.jpg?s=612x612&w=0&k=20&c=OmfmcQLh3mwp4pFVQn9Sr2U8VCyIgGtV6fuaDmd3Yrk=" alt="Apples">
+      <div class="product-details">
+        <h4>Fresh Apples</h4>
+        <div class="price">₹320</div>
+        <a href="#" class="add-btn" onclick="add('apple')">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://thumbs.dreamstime.com/b/bunch-bananas-6175887.jpg" alt="Bananas">
+      <div class="product-details">
+        <h4>Organic Bananas</h4>
+        <div class="price">₹60</div>
+        <a href="#" class="add-btn" onclick="add('banana')">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://media.istockphoto.com/id/1388403435/photo/fresh-carrots-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=XmrTb_nASc7d-4zVKUz0leeTT4fibDzWi_GpIun0Tlc=" alt="Carrots">
+      <div class="product-details">
+        <h4>Carrots</h4>
+        <div class="price">₹120</div>
+        <a href="#" class="add-btn" onclick="add('carrots')">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://t4.ftcdn.net/jpg/03/27/96/23/360_F_327962332_6mb5jQLnTOjhYeXML7v45Hc5eED2GYOD.jpg" alt="Tomatoes">
+      <div class="product-details">
+        <h4>Red Tomatoes</h4>
+        <div class="price">₹25</div>
+        <a href="#" class="add-btn" onclick="add('tomato')">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-sidebar" id="cart-sidebar">
+    <h3>Your Cart</h3>
+    <ol id="list"></ol>
+    <div class="total">Total Items: 0<br>Total Price: ₹0.00</div>
+    <button class="buy" onclick="buy()">BUY NOW</button>
+  </div>
+
+</body>
+</html>
